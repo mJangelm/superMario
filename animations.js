@@ -42,6 +42,30 @@ export const createAnimations = (game) => {
 
     }
     )
+   
+  game.anims.create( {
+      key: 'mario-grown-jump', //cuando el mario no está moviéndose.
+      frames: [{key: 'mario-grown', frame: 5}]
+    })
+
+    game.anims.create({
+      key:  'mario-grown-walk',
+     frames: game.anims.generateFrameNumbers(
+        'mario-grown',
+        {start: 3, end: 1}      
+        ),
+        repeat: -1, //-1 es infinito.
+        frameRate: 12,
+      });
+
+      game.anims.create( {
+        key: 'mario-grown-crouch',
+        frames: [{key: 'mario-grown', frame: 4}]
+  
+      }
+      )
+    
+  
     game.anims.create( {
       key: 'goomba-walk',
       frames: game.anims.generateFrameNumbers(

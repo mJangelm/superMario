@@ -108,6 +108,7 @@ this.collectibes.create(200, config.height -40, 'supermushroom')
    this.physics.add.collider(this.mario, this.enemy, onHitEnemy, null, this),
    this.physics.add.overlap(this.mario, this.collectibes, onHitItem, null, this)
    
+   
 
 
    this.cameras.main.setBounds(0,0, 2000, config.height)
@@ -161,6 +162,8 @@ function update() {
     killMario(this)
     
    }
+
+
 
    
 }
@@ -228,6 +231,8 @@ this.physics.world.resume()
 
  }
 
+
+
  function addToScore(scoretoAdd, origin, game) {
    const scoreText=  game.add.text(
       origin.x,
@@ -257,6 +262,8 @@ this.physics.world.resume()
      )
    
  }
+
+
 
 
 
